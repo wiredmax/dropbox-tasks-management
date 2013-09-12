@@ -1,0 +1,32 @@
+<!doctype html>
+<html>
+	<head>
+		<title>My Tasks</title>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+		<script src="https://www.dropbox.com/static/api/1/dropbox-datastores-0.1.0-b2.js"></script>
+		<script src="tasks.js"></script>
+		<link rel="stylesheet" href="style.css">
+	</head>
+	<body>
+		<!-- Hide UI until user has authenticated -->
+		<div id="wrapper">
+			<h1>Tasks Management</h1>
+
+			<div id="main" style="display:none">
+				<!-- Empty list that will be populated with tasks -->
+				<div id="tasks"></div>
+
+				<!-- Form to collect new tasks -->
+				<form id="addForm" method="post">
+					<input id="listName" type="text" placeholder="List name" />
+					<input id="newTask" type="text" placeholder="Enter a new task..." />
+					<button id="addButton" type="submit">Add Task</button>
+				</form>
+			</div>
+
+			<div id="login">
+				<button id="loginButton">Link to Dropbox</button>
+			</div>
+		</div>
+	</body>
+</html>
