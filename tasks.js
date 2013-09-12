@@ -35,6 +35,7 @@ $(function () {
       if(!$('#tasks-' + record.get('listname')).length) {
         $('#tasks').append('<ul id="tasks-' + record.get('listname')  + '"></ul>');
         $('#tasks-' + record.get('listname')).append('<lh>').text(record.get('listname'));
+        $('#tasks-' + record.get('listname')).addClass( "tasks" );
         
       }
 
